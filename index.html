@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="worlds">
+      <button id="earthWorld" class="world active">Earth</button>
+      <button id="spaceWorld" class="world">Space (10,000 coins)</button>
+    </div>
+    <div id="cookie" class="earth-coin"></div>
+    <div id="counter">Coins: <span id="count">0</span></div>
+    <button id="toggleUpgrades">Show Upgrades</button>
+    <button id="toggleAchievements">Show Achievements</button>
+    <div class="upgrades hidden">
+      <div class="upgrade">
+        <button id="autoClickerBtn">Buy Auto Clicker (<span id="autoClickerCost">10</span>)</button>
+        <div>Auto Clickers: <span id="autoClickerCount">0</span></div>
+        <div id="autoClickerSprites" class="sprites"></div>
+      </div>
+      <div class="upgrade">
+        <button id="multiplierBtn">Buy Multiplier (<span id="multiplierCost">50</span>)</button>
+        <div>Multiplier: <span id="multiplierCount">1</span></div>
+        <div id="multiplierSprites" class="sprites"></div>
+      </div>
+      <div class="upgrade">
+        <button id="mineBtn">Buy Mine (<span id="mineCost">100</span>)</button>
+        <div>Mines: <span id="mineCount">0</span></div>
+        <div id="mineSprites" class="sprites"></div>
+      </div>
+      <div class="upgrade">
+        <button id="polisherBtn">Buy Polisher (<span id="polisherCost">250</span>)</button>
+        <div>Polishers: <span id="polisherCount">0</span></div>
+        <div id="polisherSprites" class="sprites"></div>
+      </div>
+      <div class="upgrade">
+        <button id="expertBtn">Hire Expert (<span id="expertCost">1000</span>)</button>
+        <div>Experts: <span id="expertCount">0</span></div>
+        <div id="expertSprites" class="sprites"></div>
+      </div>
+    </div>
+    <div class="achievements hidden">
+      <h2>Achievements</h2>
+      <div id="achievementsList"></div>
+    </div>
+    <button id="rebirthBtn" class="rebirth-btn" disabled>Rebirth (Required: 1,000,000 coins)</button>
+    <div class="hack-panel hidden">
+      <h2>Hack Panel</h2>
+      <input type="password" id="hackCode" placeholder="Enter secret code" maxlength="4">
+      <div id="hackButtons" class="hidden">
+        <button id="add1000">+1000 Diamonds</button>
+        <button id="add10000">+10000 Diamonds</button>
+        <button id="doubleMultiplier">2x Multiplier</button>
+        <button id="max">Max Everything</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
